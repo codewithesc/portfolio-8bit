@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marc Ian Escober — Press Start</title>
+  <meta name="description" content="Gamified 8-bit portfolio of Marc Ian Escober (codexesc) — AI Engineer & CTO at SOFI AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div id="stars" aria-hidden="true"></div>
+
+  <header class="hud">
+    <span class="hud-item hud-player">PLAYER: CODEXESC</span>
+    <span class="hud-item hud-level" id="world">WORLD 1-1</span>
+    <span class="hud-item hud-hp">HP <span class="hearts">&#9829;&#9829;&#9829;</span></span>
+    <span class="hud-item hud-score">FISH: <span id="score">000</span></span>
+    <button id="theme-toggle" class="hud-item theme-btn" aria-pressed="false">&#9790; NIGHT</button>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="cloud cloud-1" aria-hidden="true"></div>
+      <div class="cloud cloud-2" aria-hidden="true"></div>
+      <div class="cloud cloud-3" aria-hidden="true"></div>
+      <div class="pixel-sun" aria-hidden="true"></div>
+      <p class="hero-pre">— NEW GAME —</p>
+      <h1 class="hero-title">MARC IAN<br/>ESCOBER</h1>
+      <p class="hero-sub">AI ENGINEER &nbsp;&#9670;&nbsp; CTO @ SOFI AI</p>
+      <p class="hero-type"><span id="typed"></span><span class="cursor">&#9608;</span></p>
+      <a class="press-start" href="#level-1">&#9660; PRESS START &#9660;</a>
+    </section>
+
+    <section class="level" id="level-1">
+      <h2 class="level-title"><span class="level-tag">LEVEL 1</span> PLAYER INFO</h2>
+      <p class="level-story">&#9656; REGGIE: Every hero has an origin story. This one spawned in Quezon City.</p>
+      <div class="card player-card">
+        <div class="avatar-box" title="Click me!">
+          <div id="avatar-speech" class="speech avatar-speech hidden"></div>
+          <img id="avatar" src="assets/marc.jpeg" alt="Pixel art portrait of Marc Ian Escober in graduation gown" />
+          <p class="avatar-name">MARC.EXE</p>
+        </div>
+        <div>
+          <p class="dialog-text">
+            Chief Technology Officer at SOFI AI leading strategic initiatives in
+            AI-driven innovation. Expert in project management, cloud applications,
+            and JavaScript/TypeScript — on a quest to empower businesses through
+            advancements in AI and the cloud.
+          </p>
+          <p class="dialog-meta">&#9656; Quezon City, Philippines</p>
+          <p class="dialog-meta">&#9656; Class of 2024 &#183; Batangas State University</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="level" id="level-2">
+      <h2 class="level-title"><span class="level-tag">LEVEL 2</span> QUEST LOG</h2>
+      <p class="level-story">&#9656; REGGIE: I watched him clear every quest from the beach. Here's the log.</p>
+
+      <article class="card quest">
+        <header class="quest-head">
+          <h3>AI ENGINEER / PALANTIR DEVELOPER</h3>
+          <span class="quest-status active">ACTIVE QUEST</span>
+        </header>
+        <p class="quest-where">Elgada BPO Solutions Inc. &nbsp;&#183;&nbsp; Dec 2025 — Present</p>
+        <ul>
+          <li>Built an automated QA testing framework for AI Agent Orchestration</li>
+          <li>Led red teaming — hunting critical vulnerabilities before deployment</li>
+          <li>Shipped AI solutions on Palantir Foundry with production-ready pipelines</li>
+        </ul>
+      </article>
+
+      <article class="card quest">
+        <header class="quest-head">
+          <h3>CHIEF TECHNOLOGY OFFICER</h3>
+          <span class="quest-status active">ACTIVE QUEST</span>
+        </header>
+        <p class="quest-where">SOFI AI Tech Solution Inc. &nbsp;&#183;&nbsp; Jul 2025 — Present</p>
+        <ul>
+          <li>Spearheaded cloud infrastructure and team workflow optimization</li>
+          <li>Scrum Master — standardized sprints, boosted team collaboration</li>
+          <li>Built CI/CD pipelines and GitHub workflows for faster deployments</li>
+          <li>LLM research for conversational chatbots at the AI frontier</li>
+        </ul>
+      </article>
+
+      <article class="card quest">
+        <header class="quest-head">
+          <h3>AI SOLUTIONS ENGINEER</h3>
+          <span class="quest-status done">CLEARED &#9733;</span>
+        </header>
+        <p class="quest-where">SOFI AI Tech Solution Inc. &nbsp;&#183;&nbsp; Oct 2024 — Jul 2025</p>
+        <ul>
+          <li>Google Scripts API integrations with third-party CRMs and PMS</li>
+          <li>Integrated Paymongo &amp; Xendit payment gateways</li>
+          <li>Conversational chatbots via Messenger and Instagram — car rentals to health products</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="level" id="level-3">
+      <h2 class="level-title"><span class="level-tag">LEVEL 3</span> SKILL TREE</h2>
+      <p class="level-story">&#9656; REGGIE: Years of XP grinding. No cheat codes used. (Okay... maybe one.)</p>
+      <div class="card">
+        <div class="skill"><span class="skill-name">PYTHON</span><div class="xp-bar"><div class="xp-fill" data-xp="92"></div></div></div>
+        <div class="skill"><span class="skill-name">JAVASCRIPT / TYPESCRIPT</span><div class="xp-bar"><div class="xp-fill" data-xp="90"></div></div></div>
+        <div class="skill"><span class="skill-name">LANGCHAIN</span><div class="xp-bar"><div class="xp-fill" data-xp="88"></div></div></div>
+        <div class="skill"><span class="skill-name">GOOGLE ADK</span><div class="xp-bar"><div class="xp-fill" data-xp="85"></div></div></div>
+        <div class="skill"><span class="skill-name">DOCKER</span><div class="xp-bar"><div class="xp-fill" data-xp="82"></div></div></div>
+        <div class="skill"><span class="skill-name">MONGODB / MYSQL / CLOUD STORE</span><div class="xp-bar"><div class="xp-fill" data-xp="84"></div></div></div>
+        <div class="skill"><span class="skill-name">CI/CD &amp; GITHUB WORKFLOWS</span><div class="xp-bar"><div class="xp-fill" data-xp="89"></div></div></div>
+        <div class="skill"><span class="skill-name">SCRUM MASTERY</span><div class="xp-bar"><div class="xp-fill" data-xp="87"></div></div></div>
+        <div class="skill"><span class="skill-name">LLM RESEARCH &amp; AI/ML</span><div class="xp-bar"><div class="xp-fill" data-xp="91"></div></div></div>
+      </div>
+    </section>
+
+    <section class="level" id="level-4">
+      <h2 class="level-title"><span class="level-tag">LEVEL 4</span> ACHIEVEMENTS</h2>
+      <p class="level-story">&#9656; REGGIE: Trophies I helped fish out of the deep. Shiny!</p>
+      <div class="achievements">
+        <div class="card badge-card">
+          <div class="badge-icon">&#127942;</div>
+          <h3>GEMINI CERTIFIED EDUCATOR</h3>
+          <p>Aug 2025 — Aug 2026 &#183; Generative AI concepts &amp; strategic integration of Google AI tools</p>
+        </div>
+        <div class="card badge-card">
+          <div class="badge-icon">&#127891;</div>
+          <h3>BS COMPUTER ENGINEERING</h3>
+          <p>Batangas State University — TNEU &#183; 2020—2024 &#183; Origin story complete</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="level" id="level-5">
+      <h2 class="level-title"><span class="level-tag">FINAL LEVEL</span> JOIN PARTY</h2>
+      <p class="level-story">&#9656; REGGIE: The final boss is your inbox. Send a message to beat the game.</p>
+      <div class="card contact-card">
+        <p class="dialog-text">A wild OPPORTUNITY appeared! Choose your move:</p>
+        <div class="contact-links">
+          <a class="pixel-btn" href="mailto:mib.escober@gmail.com">&#9993; EMAIL</a>
+          <a class="pixel-btn" href="tel:+639958417132">&#9742; CALL</a>
+          <a class="pixel-btn" href="https://www.linkedin.com/in/codexesc" target="_blank" rel="noopener">&#128279; LINKEDIN</a>
+        </div>
+      </div>
+      <p class="footer-note">&#169; 2026 MARC IAN ESCOBER &#183; INSERT COIN TO CONTINUE &#183; MADE WITH &#9829; AND PIXELS</p>
+    </section>
+  </main>
+
+  <div class="sea" aria-hidden="true">
+    <div class="wave wave-back"></div>
+    <div class="boat">
+      <svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" width="78">
+        <rect x="14" y="0" width="4" height="2" fill="#ff5d5d"/>
+        <rect x="12" y="2" width="2" height="12" fill="#4a3527"/>
+        <rect x="14" y="3" width="2" height="10" fill="#f4f0e0"/>
+        <rect x="16" y="5" width="2" height="8" fill="#f4f0e0"/>
+        <rect x="18" y="7" width="2" height="6" fill="#f4f0e0"/>
+        <rect x="20" y="9" width="2" height="4" fill="#f4f0e0"/>
+        <rect x="10" y="5" width="2" height="8" fill="#e8e2cc"/>
+        <rect x="8" y="7" width="2" height="6" fill="#e8e2cc"/>
+        <rect x="6" y="9" width="2" height="4" fill="#e8e2cc"/>
+        <rect x="3" y="14" width="20" height="3" fill="#6b4a2f"/>
+        <rect x="5" y="17" width="16" height="2" fill="#5a3b28"/>
+      </svg>
+    </div>
+    <div class="wave wave-front"></div>
+  </div>
+  <div class="beach" aria-hidden="true"></div>
+  <div class="palm" id="palm" title="Shake me!">
+    <svg viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" width="90">
+      <rect x="14" y="1" width="4" height="2" fill="#2e8b3d"/>
+      <rect x="6" y="3" width="4" height="2" fill="#3da34f"/>
+      <rect x="9" y="4" width="4" height="2" fill="#3da34f"/>
+      <rect x="13" y="5" width="3" height="2" fill="#3da34f"/>
+      <rect x="22" y="3" width="4" height="2" fill="#3da34f"/>
+      <rect x="19" y="4" width="4" height="2" fill="#3da34f"/>
+      <rect x="16" y="5" width="3" height="2" fill="#3da34f"/>
+      <rect x="2" y="11" width="4" height="2" fill="#1f6b2d"/>
+      <rect x="4" y="9" width="4" height="2" fill="#2e8b3d"/>
+      <rect x="7" y="7" width="4" height="2" fill="#2e8b3d"/>
+      <rect x="11" y="6" width="4" height="2" fill="#2e8b3d"/>
+      <rect x="26" y="11" width="4" height="2" fill="#1f6b2d"/>
+      <rect x="24" y="9" width="4" height="2" fill="#2e8b3d"/>
+      <rect x="21" y="7" width="4" height="2" fill="#2e8b3d"/>
+      <rect x="17" y="6" width="4" height="2" fill="#2e8b3d"/>
+      <rect x="13" y="6" width="6" height="3" fill="#2e8b3d"/>
+      <rect x="13" y="9" width="2" height="2" fill="#4a3022"/>
+      <rect x="17" y="9" width="2" height="2" fill="#4a3022"/>
+      <rect x="15" y="9" width="3" height="4" fill="#8a5f3d"/>
+      <rect x="14" y="13" width="3" height="5" fill="#8a5f3d"/>
+      <rect x="13" y="18" width="4" height="6" fill="#8a5f3d"/>
+      <rect x="12" y="24" width="4" height="7" fill="#8a5f3d"/>
+      <rect x="11" y="31" width="5" height="7" fill="#8a5f3d"/>
+      <rect x="15" y="9" width="1" height="4" fill="#6b4a2f"/>
+      <rect x="14" y="13" width="1" height="5" fill="#6b4a2f"/>
+      <rect x="13" y="18" width="1" height="6" fill="#6b4a2f"/>
+      <rect x="12" y="24" width="1" height="7" fill="#6b4a2f"/>
+      <rect x="11" y="31" width="1" height="7" fill="#6b4a2f"/>
+      <rect x="10" y="38" width="7" height="1" fill="#6b4a2f"/>
+    </svg>
+  </div>
+
+  <div id="sealion-wrap" title="That's Reggie the sea lion. Click him!">
+    <div id="speech" class="speech hidden"></div>
+    <canvas id="sealion" width="240" height="72"></canvas>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
